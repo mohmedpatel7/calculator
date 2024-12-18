@@ -1,0 +1,56 @@
+/* In your CSS file */
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    /* Light background color for better visual appearance */
+}
+
+.calculator {
+    width: 320px;
+    border-radius: 10px;
+    font-family: "Arial", sans-serif;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.display {
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    /* Primary color */
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+    /* Danger color for the Clear button */
+}
